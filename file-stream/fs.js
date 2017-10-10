@@ -1,5 +1,6 @@
 /*
-s3.next() returns chunks of text of equal size. Create a wrapper around it to return one line (separated with `\n`) per next() call.
+s3.next() returns chunks of text of equal size.
+Create a wrapper around it to return one line (separated with `\n`) per next() call.
 */
 
 const EOF = "<EOF>"
