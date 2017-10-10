@@ -81,17 +81,6 @@ function runStep(board) {
     return newBoard;
 }
 
-
-
-const board1 = [
-  [1,1,1,0,1],
-  [1,0,1,1,0],
-  [1,0,1,1,1],
-  [1,0,1,0,0],
-  [1,0,1,1,0],
-  [1,1,1,1,1],
-];
-
 function iterate(steps, board) {
     if(steps < 0) { return; }
 
@@ -103,6 +92,17 @@ function iterate(steps, board) {
     
     iterate(steps - 1, newBoard);
 }
+
+// --------------
+
+const board1 = [
+  [1,1,1,0,1],
+  [1,0,1,1,0],
+  [1,0,1,1,1],
+  [1,0,1,0,0],
+  [1,0,1,1,0],
+  [1,1,1,1,1],
+];
 
 iterate(10, board1);
 
