@@ -14,6 +14,8 @@ def get_max_profit(prices)
   max_diff
 end
 
+######## testing: ########
+
 cases = [
   [10, 7, 5, 8, 11, 9],
   [],
