@@ -3,12 +3,6 @@
 def merge_sort(nums)
   if nums.size <= 1
     nums
-  elsif nums.size == 2
-    if nums[0] > nums[1]
-      [nums[1], nums[0]]
-    else
-      nums
-    end
   else
     left, right = split_array_in_half(nums)
     combine(merge_sort(left), merge_sort(right))
